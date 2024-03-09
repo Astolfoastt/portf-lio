@@ -1,0 +1,102 @@
+.container {
+  background-image: url("../../assets/backgrounds/imgBackground.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-rendering: crisp-edges;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+    img {
+        width: 50px;
+        margin-top: 40%;
+    }
+}
+
+.containerPresentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-family-secondary);
+  }
+
+  span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-family-secondary);
+    color: var(--color-secondary);
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-family: var(--font-family-secondary);
+    text-align: center;
+    max-width: 650px;
+    margin: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.containerButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  button {
+    width: 120px;
+    height: 43px;
+    font-size: 0.7rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buttonCv {
+    background-color: var(--color-third);
+    border-radius: 10px 0px;
+    color: var(--color-primary);
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+  }
+
+  .buttonCv:hover {
+    background-color: var(--color-secondary);
+  }
+
+  .buttonProjects {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    
+    width: 120px;
+    height: 43px;
+    font-size: 0.7rem;
+    
+    border: none;
+    background-color: var(--color-secondary);
+    border-radius: 0px 10px;
+    color: var(--color-primary);
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    
+    cursor: pointer;
+  }
+}
+
+.buttonProjects:hover {
+  background-color: var(--color-third);
+}
+
+@media (min-width: 769px)  {
+  .containerPresentation {
+    margin-top: 10rem;
+  }
+}

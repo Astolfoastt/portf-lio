@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-background-primary);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.containerLogo {
+  margin: 1rem;
+  span {
+    font-family: var(--font-family-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid var(--color-secondary);
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em;
+    animation: typing 3s steps(20, end), blink-caret 0.75s step-end infinite;
+  }
+}
+
+.containerMenu {
+  margin: 1rem;
+  img {
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+.containerUl {
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    gap: 20px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      
+      img {
+        width: 20px;
+      }
+      span {
+        font-size: 0.8rem;
+        font-weight: 500;
+        font-family: var(--font-family-secondary);
+        margin-top: 8px;
+        cursor: pointer;
+      }
+      span:hover {
+        color: var(--color-secondary);
+      }
+      .btnContacts {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-secondary);
+  }
+}
+
+@media (min-width: 769px) {
+  .containerMenu {
+    display: none;
+  }
+
+  .containerLogo {
+    margin-left: 60px;
+  }
+
+  .containerUl {
+    li {
+      margin-right: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+  .containerMenuDeskTop {
+    display: none;
+  }
+}

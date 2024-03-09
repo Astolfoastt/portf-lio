@@ -1,0 +1,118 @@
+.containerPresentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: var(--font-family-secondary);
+    font-size: 1.4rem;
+    margin-top: 4rem;
+  }
+
+  p {
+    text-align: center;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    max-width: 299px;
+  }
+
+  a {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+}
+
+.containerLinkedin {
+  display: none;
+}
+.containerProjects {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.customPrev,
+.customNext {
+  font-size: 50px;
+  color: var(--color-secondary);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.customPrev {
+  left: -40px;
+}
+
+.customNext {
+  right: -40px;
+}
+
+.customPrev:hover,
+.customNext:hover {
+  color: var(--color-third);
+}
+
+@media (min-width: 1032px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .containerPresentation {
+      
+      margin-left: 150px;
+
+      h1 {
+        margin-right: 30px;
+      }
+    p {
+      text-align: start;
+    }
+  }
+  .containerLinkedin {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+
+    h1 {
+      font-family: var(--font-family-secondary);
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+    p {
+      font-family: var(--font-family-primary);
+      font-size: 0.9rem;
+      width: 50%;
+      text-align: center;
+      margin-top: 20px;
+    }
+    a {
+      color: var(--color-secondary);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
+  }
+  .containerProjects {
+    width: 40%;
+    height: 70vh;
+    margin-top: 7%;
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+    --font-family-primary:  "Source Sans 3", sans-serif;
+    --font-family-secondary: "Space Mono", monospace;
+    --color-primary: #FFFFFF;
+    --color-secondary: #2D9471;
+    --color-third: #363636;
+    --color-background-primary: #000000;
+    --color-background-secondary: #222222;
+}
+
+body {
+    background-color: var(--color-background-primary);
+    color: var(--color-primary);
+}
