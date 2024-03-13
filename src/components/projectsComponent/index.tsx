@@ -3,11 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { projectsData } from "../../data";
 import { CardComponent } from "./cardComponent";
-import { StacksComponent } from "./stacksComponent";
 import style from "./style.module.scss";
-import { ToolsComponent } from "./toolsComponents";
 
-const ProjectsComponent = () => {
+export const ProjectsComponent = () => {
   const sliderRef = useRef<Slider>(null);
 
   const settings = {
@@ -50,8 +48,6 @@ const ProjectsComponent = () => {
             Github!
           </a>
         </p>
-        <StacksComponent />
-        <ToolsComponent />
       </div>
       <div className={style.containerProjects}>
         <Slider ref={sliderRef} {...settings}>
@@ -81,19 +77,7 @@ const ProjectsComponent = () => {
         >
           &#10095;
         </button>
-        {/* <div className={style.containerLinkedin}>
-          <h1>Vamos conversar!</h1>
-          <p>
-            Bora fazer uma conexão e discutir projetos e quem sabe até fazer um,
-            acesse meu{" "}
-            <a href="https://github.com/Astolfoastt" target="_blank">
-              LinkeIn!
-            </a>
-          </p>
-        </div> */}
       </div>
     </div>
   );
 };
-
-export default ProjectsComponent;

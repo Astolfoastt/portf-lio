@@ -31,11 +31,15 @@ export const CardComponent = ({
       <div className={style.containerLinks}>
         <div>
           <img src={iconApplication} alt="icone aplicação" />
-          <a href={linkApplication}>Aplicação</a>
+          <a href={linkApplication} target="_blank">
+            Aplicação
+          </a>
         </div>
         <div>
           <img src={iconGitHub} alt="icone github" />
-          <a href={linkRepository}>Repositório do projeto</a>
+          <a href={linkRepository} target="_blank">
+            Repositório do projeto
+          </a>
         </div>
       </div>
     </>

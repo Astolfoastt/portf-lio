@@ -10,10 +10,10 @@
   display: flex;
   justify-content: center;
 
-    img {
-        width: 50px;
-        margin-top: 40%;
-    }
+  img {
+    width: 50px;
+    margin-top: 40%;
+  }
 }
 
 .containerPresentation {
@@ -72,21 +72,21 @@
   }
 
   .buttonProjects {
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
-    
+
     width: 120px;
     height: 43px;
     font-size: 0.7rem;
-    
+
     border: none;
     background-color: var(--color-secondary);
     border-radius: 0px 10px;
     color: var(--color-primary);
     font-family: var(--font-family-primary);
     font-weight: 600;
-    
+
     cursor: pointer;
   }
 }
@@ -95,7 +95,7 @@
   background-color: var(--color-third);
 }
 
-@media (min-width: 769px)  {
+@media (min-width: 769px) {
   .containerPresentation {
     margin-top: 10rem;
   }

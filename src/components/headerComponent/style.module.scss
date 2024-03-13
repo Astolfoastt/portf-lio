@@ -47,18 +47,18 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      
+
       img {
         width: 20px;
       }
-      span {
+      .buttonLink {
         font-size: 0.8rem;
         font-weight: 500;
         font-family: var(--font-family-secondary);
         margin-top: 8px;
         cursor: pointer;
       }
-      span:hover {
+      .buttonLink:hover {
         color: var(--color-secondary);
       }
       .btnContacts {

@@ -1,5 +1,4 @@
 import style from "./style.module.scss";
-import iconScroll from "../../assets/icons/iconScroll.png";
 import { Link } from "react-scroll";
 import cvAstDaniel from "../../assets/cv/cv-astdaniel.pdf";
 
@@ -35,7 +34,6 @@ export const HomeComponent = () => {
             Projetos
           </Link>
         </div>
-        <img src={iconScroll} alt="icone de rolagem" />
       </div>
     </div>
   );

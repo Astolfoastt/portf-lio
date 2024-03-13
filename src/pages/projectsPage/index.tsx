@@ -1,5 +1,6 @@
 
-import ProjectsComponent from "../../components/projectsComponent";
+
+import { ProjectsComponent } from "../../components/projectsComponent";
 import style from "./style.module.scss";
 
 export const ProjectsPage = () => {

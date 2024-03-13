@@ -4,6 +4,8 @@ import iconSass from "./assets/iconsProject/iconSass.png";
 import iconTs from "./assets/iconsProject/iconTS.png";
 import iconORM from "./assets/iconsProject/iconORM.png";
 import iconExpress from "./assets/iconsProject/iconExpress.png";
+import iconChecked from "./assets/icons/iconChecked.png";
+import iconLoading from "./assets/icons/iconLoading.png";
 import imgKenzieHub from "./assets/imagesProjects/imgKenzieHub.png";
 import imgNuKenzie from "./assets/imagesProjects/imgNuKenzie.png";
 import imgBackend from "./assets/imagesProjects/imgBackend.png";
@@ -21,7 +23,8 @@ export interface Project {
 
 export interface Training {
   id: number;
-  title: string;
+  course: string;
+  institution: string;
   description: string;
   status: string;
 }
@@ -65,7 +68,7 @@ export const projectsData: Project[] = [
     id: 4,
     title: "Contact Hub",
     description:
-      "Projeto Full-Stack, destinado a genrenciamento de contatos sendo possível a realização de login com autenticação, criação de contatos e gerenciamento dos contatos, o projeto conta com atentição, e validações necessárias para o gerenciamento de contatos",
+      "Projeto Full-Stack, destinado a genrenciamento de contatos sendo possível a realização de login com autenticação, criação de contatos e gerenciamento dos contatos, o projeto conta com autentição, e validações necessárias para o gerenciamento de contatos",
     image: imgContactHub,
     techs: [iconJS, iconExpress, iconReact, iconSass],
     linkApplication: "https://contacthub-f.vercel.app/",
@@ -74,8 +77,21 @@ export const projectsData: Project[] = [
   },
 ];
 
-// export const formations: Training[] = [
-//   {
-  
-//   }
-// ];
+export const formationsData: Training[] = [
+  {
+    id: 1,
+    institution: "Kenzie Academy Brasil",
+    course: "Desenvolvimento Web",
+    description:
+      "Atividades e grupos: Curso de 2.000 horas de Desenvolvimento Full Stack que abrangem tecnologias Front End e Back End além de soft skills necessários para o mercado de trabalho. Entre linguagens e tecnologias, estão HTML5, CSS3, JavaScript (ES6+), React, Node.js, Python (Django e Flask) e SQL.",
+    status: iconChecked,
+  },
+  {
+    id: 2,
+    institution: "Estácio",
+    course: "Analise e Desenvolvimento de Sistemas",
+    description:
+      "A faculdade forma profissionais em análise e desenvolvimento de sistemas de informação, abrangendo programação, bancos de dados e gestão de projetos de TI. Os graduados podem atuar em desenvolvimento de software, análise de sistemas e consultoria tecnológica.",
+    status: iconLoading,
+  },
+];
